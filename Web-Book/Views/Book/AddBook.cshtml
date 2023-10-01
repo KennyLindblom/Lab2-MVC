@@ -1,0 +1,43 @@
+﻿﻿@using NewLab1_MinimalAPI.Models;
+@model NewLab1_MinimalAPI.Models.Book;
+@{
+    ViewData["Title"] = "Add A Book";
+}
+@* @if (Model == null)
+{
+ *@
+    <div class="bookAdd">
+        <div class="addColumn">
+            <form asp-action="AddBook" method="post" class="form-container">
+                <h1 style="text-align:center;">Add A Book</h1>
+                <div class="form-group">
+                    <label for="title">Title : </label>
+                    <input asp-for="Title" class="addInput" type="text" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author : </label>
+                    <input asp-for="Author" class="addInput" type="text" id="author">
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre : </label>
+                    <input asp-for="Genre" class="addInput" type="text" id="genre">
+                </div>
+                <div class="form-group">
+                    <label for="realseYear">Release year : </label>
+                    <input asp-for="ReleaseYear" class="addInput" type="text" id="releaseYear">
+                </div>
+            <div class="form-group">
+                <label for="Description">Description : </label>
+                <input asp-for="Description" class="addInput" type="text" id="description">
+            </div>
+            <div class="form-group">
+                <label for="available">Available : </label>
+                <input asp-for="IsAvaliabel" type="checkbox" id="available">
+            </div>
+                <div class="form-group">
+                    <button class="buttonStyle" type="submit" value="Create">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+@* } *@

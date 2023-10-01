@@ -1,0 +1,60 @@
+﻿﻿@using NewLab1_MinimalAPI.Models;
+@model NewLab1_MinimalAPI.Models.Book;
+@{
+    ViewData["Title"] = "Update A Book";
+}
+
+<div class="bookContainer">
+    <div class="bookColumn">
+        <table class="resultTable">
+            <tr>
+                <td class="resultTitle">@Html.DisplayFor(modelItem => modelItem.Title) </td>
+                <td class="resultAuthor"><p>Author : </p> @Html.DisplayFor(modelItem => modelItem.Author) </td>
+            </tr>
+        </table>
+        <table class="resultTable2">
+            <tr>
+                <td class="resultGenre"><p>Genre :  @Html.DisplayFor(modelItem => modelItem.Genre) </p> </td>
+                <td class="resultYear"><p>Release Year : @Html.DisplayFor(modelItem => modelItem.ReleaseYear) </p> </td>
+
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="updateContainer">
+    <div class="updateColumn">
+        <form asp-action="UpdateBook" method="post" class="form-container">
+            @* <div class="form-group">
+                <label for="BookId">ID : </label>
+                <input asp-for="Id" class="addInput" type="number" id="title">
+            </div> *@
+            <div class="form-group">
+                <label for="title">Title : </label>
+                <input asp-for="Title" class="addInput" type="text" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author : </label>
+                <input asp-for="Author" class="addInput" type="text" id="author">
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre : </label>
+                <input asp-for="Genre" class="addInput" type="text" id="genre">
+            </div>
+            <div class="form-group">
+                <label for="releaseYear">Release year : </label>
+                <input asp-for="ReleaseYear" class="addInput" type="text" id="releaseYear">
+            </div>
+            <div class="form-group">
+                <label for="Description">Description : </label>
+                <input asp-for="Description" class="addInput" type="text" id="description">
+            </div>
+            <div class="form-group">
+                <label for="available">Available : </label>
+                <input asp-for="IsAvaliabel" type="checkbox" id="available">
+            </div>
+            <div class="form-group">
+                <button class="buttonStyle" type="submit" value="Create">Save</button>
+            </div>
+        </form>
+    </div>
+</div>

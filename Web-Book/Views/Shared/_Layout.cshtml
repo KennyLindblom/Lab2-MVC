@@ -1,0 +1,55 @@
+﻿﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SoftLib</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header>
+        <div class="navBar">
+            <nav>
+                <form class="banner" asp-controller="Book" asp-action="SearchBook" method="get" style="display: flex; justify-content: space-between; align-items: center; formaction="Book/SearchBook" >
+                    <a class="homeButton" asp-controller="Home" asp-action="Index" style="text-decoration:none; color:inherit;">
+                        <h2><i class="fa-solid fa-house fa-2x"></i></h2>
+                    </a>
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                        <input class="searchBar" type="text" placeholder="Search for Title, Author ..." name="searchString" id="searchString" style="margin-right:80px;">
+                        <button class="searchButton" asp-controller="Book" asp-action="SearchBook" method="get">
+                            <i class="fa-solid fa-magnifying-glass fa-3x" style="margin-left:1px;"></i>
+                        </button>
+                    </div>
+                </form>
+            </nav>
+        </div>
+        
+    </header>
+
+
+    <main role="main" class="pb-3">
+        <div class="bodyContainer">
+            @RenderBody()
+        </div>
+    </main>
+
+
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Soft Lib23 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

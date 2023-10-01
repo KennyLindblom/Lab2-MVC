@@ -1,0 +1,295 @@
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.bodyContainer {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), linear-gradient(to bottom, #258cfb, #258cfb); /* Black with light blue gradient overlay */
+    color: white; /* Text color */
+    height: 80em;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.navBar {
+    background-color: white;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.banner {
+    height: 30px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0) 43%, rgba(191,191,187,1) 100%);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.PictureBanner {
+    box-shadow: 5px 10px 10px 6px rgba(0.5, 0.6, 0.6, 0.5);
+}
+
+.PictureLine {
+    background: rgb(110,110,110);
+    background: radial-gradient(circle, rgba(110,110,110,1) 0%, rgba(0,0,0,1) 23%);
+    border-style: solid;
+    border-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px;
+}
+
+.buttonLine {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7em;
+}
+
+.buttonCol {
+    width: 30em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.banner-col {
+    background-color: forestgreen;
+    width: 150px;
+    height: 200px;
+}
+
+.searchBar {
+    border: solid 3px #fff;
+    border-color: black;
+    height: 3em;
+    outline: solid #fc0 0;
+    width: 35em;
+    align-self: center;
+    box-shadow: 1px 1px;
+    box-shadow: 5px 5px 10px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 10px;
+    text-align:center;
+}
+
+.inputFields {
+    height: 20em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-control {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border-color: dimgray;
+}
+
+.bookContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bookColumn {
+    padding-top: 4em;
+}
+
+.resultTable td {
+    display: flex;
+    justify-content: center;
+}
+
+.resultTable .resultTitle {
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+.resultTable .resultAuthor {
+    justify-content: flex-start;
+    font-size: 30px;
+}
+
+.resultTable2 {
+    flex-direction: row;
+}
+
+    .resultTable2 .resultGenre {
+        justify-content: flex-start;
+        font-size: 30px;
+        padding-right: 0.5em;
+    }
+
+    .resultTable2 .resultYear {
+        justify-content: flex-end;
+        font-size: 30px;
+    }
+
+.form-group-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonStyle {
+    width: 13em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: darkblue;
+    color: white;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    margin-top: 2em;
+}
+
+    .buttonStyle:hover {
+        background-color: deepskyblue;
+        box-shadow: none;
+    }
+
+.navIcons {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+    .navIcons:hover {
+        background-color: dimgray;
+        box-shadow: none;
+    }
+
+
+.bookAdd {
+    display: flex;
+    justify-content: center;
+    padding-top: 7em;
+}
+
+    .bookAdd .buttonStyle {
+        height: 3em;
+        width: 130%;
+    }
+
+.updateColumn {
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    border-style: solid;
+    width: 40em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.updateContainer {
+    display: flex;
+    justify-content: center;
+}
+
+    .updateContainer .buttonStyle {
+        height: 3em;
+        width: 100%;
+    }
+
+
+
+.viewTable {
+    display: flex;
+    flex-direction: column;
+}
+
+.viewTableData {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.searchButton {
+    background-color: darkblue;
+    border-style: solid;
+    border-radius: 18px;
+    box-shadow: 5px 5px 10px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    height: 4em;
+    width: 5em;
+    transition-duration: 0.2s;
+    
+}
+
+    .searchButton:hover {
+        background-color: deepskyblue;
+        box-shadow: none;
+    }
+
+.homeButton {
+    background-color: darkblue;
+    border-style: solid;
+    border-radius: 18px;
+    box-shadow: 5px 5px 10px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    height: 5em;
+    width: 6em;
+    transition-duration: 0.2s;
+    margin-left: 2em;
+    padding-left: 0.6em;
+    padding-top: 0.2em;
+}
+
+    .homeButton:hover {
+        background-color: deepskyblue;
+        box-shadow: none;
+    }
+
+.imageDeal {
+    box-shadow: 0px 0px 5px 5px floralwhite;
+}
+
+.table{
+    color:white;
+}
+
+.button-click-animation {
+    animation: buttonClick 0.5s ease-in-out;
+}
+
+.ViewAllBooks{
+    text-align:center;
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}

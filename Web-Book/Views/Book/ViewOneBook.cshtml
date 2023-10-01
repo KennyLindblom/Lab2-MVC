@@ -1,0 +1,72 @@
+﻿@using NewLab1_MinimalAPI.Models;
+@model NewLab1_MinimalAPI.Models.Book
+
+@{
+    ViewData["Title"] = "View One Book";
+}
+
+@* @if (Model == null)
+{
+    <h2 style="text-align:center; padding-top:5em;">Enter Book ID</h2>
+    <div class="bookContainer">
+        <div class="inputFields">
+            <form asp-action="ViewOneBook" method="get">
+                <div class="form-group row">
+                    <div class="inputId">
+                        <input type="text" id="Id" name="id" class="form-control" placeholder="Enter ID" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <button type="submit" class="buttonStyle">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+}
+ else
+{
+    <div class="bookContainer">
+        <div class="bookColumn">
+            <table class="resultTable">
+                <tr>
+                    <td class="resultTitle">@Html.DisplayFor(modelItem => modelItem.Title)</td>
+                    <td class="resultAuthor"><p>Author :</p> @Html.DisplayFor(modelItem => modelItem.Author)</td>
+                </tr>
+            </table>
+            <table class="resultTable2">
+                <tr>
+                    <td class="resultGenre"><p>Genre : @Html.DisplayFor(modelItem => modelItem.Genre)</p></td>
+                    <td class="resultYear"><p>Release Year : @Html.DisplayFor(modelItem => modelItem.ReleaseYear)</p></td>
+                </tr>
+            </table>
+        </div>
+    </div> *@
+
+<h1>View One Book</h1>
+
+<div>
+    <form asp-action="ViewOneBook" method="get">
+        <div class="form-group">
+            <label for="id">Enter Book ID:</label>
+            <input type="text" id="Id" name="id" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+@if (Model != null)
+{
+    <div>
+        <h2>@Model.Title</h2>
+        <p>Author: @Model.Author</p>
+        <p>Genre: @Model.Genre</p>
+        <p>Release Year: @Model.ReleaseYear</p>
+        <p>Description: @Model.Description</p>
+    </div>
+}
+
+
+
+
